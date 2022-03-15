@@ -345,7 +345,6 @@ body {
 
 .home .img-container img{ 
     position: absolute;
-    z-index: -1;
     width: 100%;
 }
 
@@ -353,6 +352,7 @@ body {
 .home .img-container .img1{ 
     left: 0;
     top: 0;
+    z-index: -1;
 }
 
 .home .img-container .img2{ 
@@ -422,12 +422,7 @@ body {
 .home .bg-container {
     background-image: url(/assets/images/extracted/Layer1.png);
 }
-.home .bg-container .img1 {
-   
-}
-.home .bg-container .img2 {
 
-}
 
 /* Creations Sections */
 

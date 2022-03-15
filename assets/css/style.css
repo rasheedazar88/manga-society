@@ -326,7 +326,7 @@ body {
 .header-wrapper {
     position: fixed;
     height: 77px;
-    z-index: 2;
+    z-index: 99;
     width: 100%;
     backdrop-filter: blur(4px);
 }
@@ -535,6 +535,31 @@ body {
     margin-bottom: 50px;
 }
 
+.main-image-content {
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image-content > span {
+    font-size: 30px;
+    background-image: var(--bgGradiant1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 45px;
+}
+.main-image-content p {
+    font-size: 22px;
+    color: var(--primaryFontColor);
+    line-height: 1.5;
+    margin-bottom: 45px;
+}
+
+
+.main-image-content * {
+    text-transform: none;
+}
 .home .play-btn {
     background-image: var(--bgGradiant1);
     color: var(--bgColor);
@@ -1143,6 +1168,24 @@ h3 {
         left: 990px;
         top: 490px;
     }
+
+    .roadmap-card.card1 {
+        left: 100px;
+        top: -120px;
+    }
+    .roadmap-card.card2 {
+        left: 460px;
+        top: -240px;
+    }
+    .roadmap-card.card3 {
+        left: 820px;
+        top: -290px;
+    }
+    .roadmap-card.card4 {
+        left: 1180px;
+        top: -220px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {

@@ -364,11 +364,13 @@ body {
 .home .img-container .img3{ 
     left: -12px;
     top: 1062px;
+    z-index: 4;
 }
 
 .home .img-container .img4{ 
     left: -12px;
     top: 1065px;
+    z-index: 4;
 }
 
 .home .img-container .img5{ 
@@ -488,6 +490,13 @@ body {
 
 .creations {
     position: relative;
+}
+
+.creations .section_container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    padding-top: 100px;
 }
 
 .creations .round-img {

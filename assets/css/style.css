@@ -173,6 +173,7 @@ input, select {
 body {
     background-color: var(--bgColor);
     color: var(--primaryFontColor);
+    background-image: url(/assets/images/extracted/Shape1.png);
 }
 
 :root {
@@ -369,6 +370,13 @@ body {
     left: -12px;
     top: 1065px;
 }
+
+.home .img-container .img5{ 
+    left: -12px;
+    top: 1065px;
+    z-index: 3;
+}
+
 .home .avatar {
     position: absolute;
 }
@@ -757,12 +765,19 @@ body {
 
 /* Our Team End */
 
+.ourteam .text {
+    font-size: 22px;
+    font-family: 'cera_medium_4';
+    line-height: 1.5;
+}
+
 /* Faq Section Start*/
 .faq.container {
     padding-bottom: 170px;
 }
 .faq_content {
     width: 100%;
+    max-width: 1200px;
 }
 
 .accordion {

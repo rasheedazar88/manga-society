@@ -238,6 +238,7 @@ select {
     padding: 0;
     margin: 0;
     font-family: "cera_regular_4";
+    scroll-behavior: smooth;
 }
 
 body {
@@ -331,6 +332,23 @@ body {
     backdrop-filter: blur(4px);
 }
 
+.circle1 {
+    max-width: 597.63px;
+    top: 1556px;
+    left: 1556px;
+}
+
+.circle2 {
+    max-width: 348px;
+    top: 6177px;
+    top: -105px;
+}
+
+.triangle1 {
+    max-width: 289px;
+    top: 2766px;
+    left: 1574px;
+}
 .desktop-menu {
 }
 
@@ -535,11 +553,19 @@ body {
     margin-bottom: 50px;
 }
 
+.main-image-below-space {
+    margin-bottom: 910px;
+}
 .main-image-content {
     z-index: 5;
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.main-image-content .title {
+    font-size: 60px;
+    font-family: "cera_regular_4";
 }
 
 .main-image-content > span {
@@ -555,7 +581,6 @@ body {
     line-height: 1.5;
     margin-bottom: 45px;
 }
-
 
 .main-image-content * {
     text-transform: none;
@@ -763,6 +788,101 @@ body {
     margin-bottom: 25px;
 }
 
+/* Raasik */
+
+.society-nfts {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 400px;
+    justify-content: space-between;
+}
+
+.society-nfts .box1,
+.society-nfts .box2 {
+    max-width: 50%;
+}
+.society-nfts .box2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.society-nfts .rel {
+    z-index: 1;
+}
+.society-nfts .abs-img {
+    position: absolute;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.society-nfts .abs-img.img1 {
+    max-width: 200px;
+    left: -65px;
+    top: 0;
+}
+
+.society-nfts .abs-img.img2 {
+    max-width: 120px;
+}
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.society-nfts .title {
+    color: var(--primaryFontColor);
+    font-size: 60px;
+    letter-spacing: 1.5;
+    font-family: "cera_regular_4";
+    margin-bottom: 40px;
+    padding-bottom: inherit;
+}
+.society-nfts .sub-heading {
+    background-image: var(--bgGradiant1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-family: "cera_regular_4";
+    padding-bottom: 50px;
+}
+.society-nfts .sub-text {
+    font-family: "cera_thin_4";
+    padding-bottom: 60px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.society-nfts .box2 img {
+    max-width: 649px;
+    border-radius: 20px;
+}
+
+.society-nfts .rel {
+    max-width: 640px;
+}
+
+.society-nfts .abs-img.img1 {
+    max-width: 200px;
+}
+
+.society-nfts .abs-img.img2 {
+    max-width: 120px;
+}
+
+.society-nfts .abs-img.img3 {
+    max-width: 160px;
+}
+
+.society-nfts .abs-img.img4 {
+    max-width: 120px;
+}
+
+.society-nfts .abs-img.img5 {
+    max-width: 160px;
+}
+
 /* Road Map End */
 
 /* Our Team Start */
@@ -897,8 +1017,9 @@ body {
 }
 .accordion:after {
     font-family: "FontAwesome";
-    content: "\2b"; /* Unicode character for "plus" sign (+) */
-    font-size: 20px;
+    content: url(/assets/images/extracted/plus.png);
+    font-size: 0px;
+    color: #cccccc;
     color: var(--bgColor);
     float: right;
     margin-left: 5px;
@@ -914,6 +1035,7 @@ body {
 
 .active:after {
     content: ""; /* Unicode character for "minus" sign (-) */
+    content: url(/assets/images/extracted/minus.png);
     background-image: none;
     background-color: var(--bgColor);
     color: var(--primaryFontColor);
@@ -943,6 +1065,7 @@ body {
 
 .footer-bg-img {
     min-height: 300px;
+    position: relative;
 }
 
 .footer-content {
@@ -1101,6 +1224,9 @@ h3 {
         font-size: 20px;
     }
 
+    .main-image-below-space {
+        margin-bottom: 710px;
+    }
     .home .shape-container img {
         transform: scale(0.75);
     }
@@ -1186,6 +1312,48 @@ h3 {
         top: -220px;
     }
 
+    .society-nfts .box2 {
+        transform: scale(0.75);
+    }
+
+    .society-nfts .abs-img.img1 {
+        transform: translate(-28px, -122px);
+    }
+
+    .society-nfts .abs-img.img2 {
+        transform: translate(333px, -328px);
+    }
+
+    .society-nfts .abs-img.img3 {
+        top: 50%;
+        transform: translate(430px, -50%);
+    }
+
+    .society-nfts .abs-img.img4 {
+        transform: translate(400px, 400px);
+    }
+
+    .society-nfts .abs-img.img5 {
+        transform: translate(-155px, 440px);
+    }
+
+    .footer-bg-img .img2,
+    .footer-bg-img .img3 {
+        top: 110px;
+    }
+
+    .footer-bg-img {
+        min-height: 240px;
+    }
+
+    .footer-bg-img .img2 {
+        top: 110px;
+        z-index: 2;
+    }
+
+    .footer-bg-img .img3 {
+        top: 110px;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -405,6 +405,55 @@ body {
     top: 740px;
 }
 
+.home .shape-container {
+    position: absolute;
+    width: 100%;
+}
+
+.home .shape-container img {
+    border-radius: 20px;
+}
+
+.home .shape8-1 {
+    left: 101px;
+    top: 347px;
+}
+
+.home .shape8-1 img {
+    width: 153px;
+    top: 152px;
+}
+
+.home .shape8-2 {
+    left: 382px;
+    top: 518px;
+}
+
+.home .shape8-2 img {
+    width: 124px;
+    top: 124px;
+}
+
+.home .shape8-3 {
+    left: 1595px;
+    top: 267px;
+}
+
+.home .shape8-3 img {
+    width: 124px;
+    top: 124px;
+}
+
+.home .shape8-4 {
+    left: 1682px;
+    top: 555px;
+}
+
+.home .shape8-4 img {
+    width: 152px;
+    top: 152px;
+}
+
 .home img{
     position: absolute;
 }
